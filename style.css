@@ -1,0 +1,99 @@
+:root{
+   /**/
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+/**/
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+/*font family*/
+--ff:'Red Hat Display', sans-serif;
+/*font weights*/
+--fw-500:500;
+--fw-700:700;
+--fw-900:900;
+}
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.background{
+    position: absolute;
+    left: 0px;
+    top: 0px;    
+}
+img{
+    width: 100%;
+}
+body{
+   display: grid;
+   place-content: center;
+   min-height: 100vh;
+   color:var(--Desaturated-blue);
+   font-family: var(--ff);
+   font-size: 16px;  
+   background-color:var(--Pale-blue);
+}
+
+.main-box{
+    overflow: hidden;
+    max-width: 400px;
+    background-color: white;
+    z-index: 1;
+    border-radius: 18px;
+}
+.half-container{
+    padding: 40px;
+    display: grid;
+    gap:34px;
+    text-align: center;
+}
+.first-flex,.title{
+    color: var(--Dark-blue);
+    font-family: var(--ff);
+    font-weight: var(--fw-900);
+}
+.flex-group{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: rgba(85, 85, 85, 0.042   );
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.icon-arrow-down-circle{
+  display: flex;
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  .first-button{
+    position: absolute;
+    right: 30px;
+    border: 0 ;
+    background-color: white;
+    text-decoration-line: underline;
+    color: var(--Bright-blue);
+    font-weight: var(--fw-700);
+    font-family: var(--ff);
+    cursor: pointer;
+  }
+  .second-button{
+    border: 0;
+    padding: 14px;
+    font-weight: var(--fw-700);
+    background-color: var(--Bright-blue);
+    border-radius: 7px;
+    color: white;
+    box-shadow: 0px 20px 20px 0px rgba(18, 0, 158, 0.162);
+    cursor: pointer;
+  }
+  .third-button{
+    border: 0;
+    background-color: white;
+    font-family: var(--ff);
+    font-weight: var(--fw-900);
+    color:var(--Desaturated-blue) ;
+    cursor: pointer;
+
+  }
